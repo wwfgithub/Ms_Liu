@@ -482,7 +482,7 @@ function tokenizer($TEXT) {
                                 else break;
                         }
                         else {
-                                if (ch != "u") parse_error("Expecting UnicodeEscapeSequence -- uXXXX");
+                                if (ch != "u") parse_error("Expecting UnicodeEscapeSequence -- u奥斯本");
                                 ch = read_escaped_char();
                                 if (!is_identifier_char(ch)) parse_error("Unicode char: " + ch.charCodeAt(0) + " is not valid in identifier");
                                 name += ch;
